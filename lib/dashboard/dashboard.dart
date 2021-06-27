@@ -42,7 +42,9 @@ class _QouteListState extends State<QouteList> {
       ),
       floatingActionButton: FloatingActionButton.extended(
         focusElevation: 10.0,
-        onPressed: () {},
+        onPressed: () {
+          Navigator.pushNamed(context, '/compose');
+        },
         icon: Icon(Icons.add),
         label: Text("compose"),
         backgroundColor: Colors.blueAccent[250],

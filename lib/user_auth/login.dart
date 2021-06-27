@@ -8,17 +8,13 @@ class LoginPage extends StatelessWidget {
       backgroundColor: Colors.white,
       appBar: AppBar(
         elevation: 0,
-        brightness: Brightness.light,
-        backgroundColor: Colors.white,
+        title: Text("Login"),
+        centerTitle: true,
         leading: IconButton(
-          onPressed: () {
-            // Navigator.pop(context);
-            Navigator.pushNamed(context, '/compose');
-          },
+          onPressed: () {},
           icon: Icon(
-            Icons.arrow_back_ios,
+            Icons.arrow_back_ios_new,
             size: 20,
-            color: Colors.black,
           ),
         ),
       ),
@@ -72,7 +68,9 @@ class LoginPage extends StatelessWidget {
                     child: MaterialButton(
                       minWidth: double.infinity,
                       height: 60,
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/dashboard');
+                      },
                       color: Color(0xff0095FF),
                       elevation: 0,
                       shape: RoundedRectangleBorder(
