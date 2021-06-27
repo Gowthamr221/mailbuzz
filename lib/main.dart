@@ -5,7 +5,7 @@ import './compose/compose_page.dart';
 
 void main() {
   runApp(MaterialApp(
-    initialRoute: '/compose',
+    initialRoute: '/',
     routes: {
       '/': (context) => HomePage(),
       '/dashboard': (context) => QouteList(),

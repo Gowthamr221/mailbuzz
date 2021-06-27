@@ -12,7 +12,8 @@ class LoginPage extends StatelessWidget {
         backgroundColor: Colors.white,
         leading: IconButton(
           onPressed: () {
-            Navigator.pop(context);
+            // Navigator.pop(context);
+            Navigator.pushNamed(context, '/compose');
           },
           icon: Icon(
             Icons.arrow_back_ios,
